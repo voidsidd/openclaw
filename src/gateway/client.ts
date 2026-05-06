@@ -305,7 +305,7 @@ export class GatewayClient {
           return new Error("Connection security failed (missing fingerprint)");
         }
         if (fingerprint !== expected) {
-          return new Error("Connection security failed (fingerprint mismatch)");
+          return new Error("Connection security failed (tls fingerprint mismatch)");
         }
         return undefined;
       };

@@ -1,0 +1,29 @@
+[RUNNING] npx vitest src/gateway/client.watchdog.test.ts --run --reporter verbose
+
+ RUN  v4.1.5 C:/Users/LENOVO/Desktop/676/openclaw2
+
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > prefers connectChallengeTimeoutMs and still honors the legacy alias 127ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > closes on missing ticks 354ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > connects to IPv6 loopback while managed proxy Gateway-only mode is active 474ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > lets pending requests own their timeout when ticks are missing 25ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > times out unresolved requests and clears pending state 10ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > does not auto-timeout expectFinal requests 9ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > clamps oversized explicit request timeouts before scheduling 10ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > clamps oversized default request timeouts before scheduling 10ms
+ ✓  gateway-server  ../../src/gateway/client.watchdog.test.ts > GatewayClient > rejects mismatched tls fingerprint 120ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > prefers connectChallengeTimeoutMs and still honors the legacy alias 133ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > closes on missing ticks 336ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > connects to IPv6 loopback while managed proxy Gateway-only mode is active 220ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > lets pending requests own their timeout when ticks are missing 13ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > times out unresolved requests and clears pending state 7ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > does not auto-timeout expectFinal requests 5ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > clamps oversized explicit request timeouts before scheduling 7ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > clamps oversized default request timeouts before scheduling 4ms
+ ✓  gateway-client  ../../src/gateway/client.watchdog.test.ts > GatewayClient > rejects mismatched tls fingerprint 38ms
+
+ Test Files  2 passed (2)
+      Tests  18 passed (18)
+   Start at  00:55:57
+   Duration  19.79s (transform 6.77s, setup 4.95s, import 10.08s, tests 1.92s, environment 1ms)
+
+Exit code: 0
