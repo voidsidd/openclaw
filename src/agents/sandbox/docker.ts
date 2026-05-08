@@ -192,7 +192,7 @@ export async function readDockerContainerLabel(
   containerName: string,
   label: string,
 ): Promise<string | null> {
-  if (!/^[a-zA-Z0-9._\/-]+$/.test(label)) {
+  if (!/^[a-zA-Z0-9._/-]+$/.test(label)) {
     throw new Error(`Invalid label name: ${label}. Labels must only contain alphanumeric characters, dots, underscores, hyphens, or slashes.`);
   }
   const result = await execDocker(
