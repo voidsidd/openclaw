@@ -482,7 +482,11 @@ actor MacNodeRuntime {
             }
 
             guard poll, Date() < deadline else { return false }
-            try? await Task.sleep(nanoseconds: 120_000_000)
+            do {
+                try await Task.sleep(nanoseconds: 120_000_000)
+            } catch {
+                // Ignore sleep failure
+            }
         }
     }
 
